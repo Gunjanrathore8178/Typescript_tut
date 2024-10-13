@@ -108,4 +108,66 @@ console.log('test');
 */
 
 
+/*Leeson-8
+let greet = () => {
+    console.log('hellor, world');
+}
+//greet='rya'
+const add = (a: number, b: number, c: number | string=10) => {
+    console.log(a + b);
+    console.log(c);
+}
+add(5, 10);
 
+const minus=(a:number,b:number)=>{
+    return a+b;
+}
+let result=minus(10,7);
+*/
+
+
+/*Lesson-9
+
+type StringOrNum=string|number;
+const logDetails=(uid: StringOrNum, item: string)=>{
+    console.log(`${item} has a uid of ${uid}`);
+}
+
+const greet=(user: {name:string, uid:string | number})=>{
+    console.log(`${user.name} says hello`);
+}
+
+const greetAgain = (user: { name: string, uid: string | number }) => {
+    console.log(`${user.name} says hello`);
+}
+*/
+
+/*Lesson-10
+//let greet:Function;
+
+//example1
+let greet: (a: string, b: string) => void;
+greet = (name: string, greeting: string) => {
+    console.log(`${name} says ${greeting}`);
+}
+//example2
+let calc: (a: number, b: number, c: string) => number;
+
+calc = (numOne: number, numTwo: number, action: string) => {
+    if (action === 'add') {
+        return numOne + numTwo;
+    }
+    else {
+        return numOne - numTwo;
+    }
+}
+//example3
+let logDetails: (obj: { name: string, age: number }) => void;
+logDetails = (ninja: { name: string, age: number }) => {
+    console.log(`${ninja.name} is ${ninja.age} years old `);
+}
+*/
+
+
+
+/*Lesson-11*/
